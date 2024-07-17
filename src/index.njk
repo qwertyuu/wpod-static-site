@@ -6,7 +6,7 @@ title: Image Progress Gallery
 {% for folder in folders %}
     <div class="folder-item">
         <a href="/{{ folder.path }}/">
-            <img src="/images/{{ folder.path }}/{{ folder.thumbnail }}" alt="{{ folder.date }}">
+            <img src="{{ folder.cdnurl }}/{{ folder.thumbnail }}" alt="{{ folder.date }}">
             <p>{{ folder.date }}</p>
         </a>
     </div>

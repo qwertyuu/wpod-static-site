@@ -14,15 +14,15 @@ permalink: "{{ folder.path }}/"
         <p>Original</p>
     </div>
     <div class="progress-image">
-        <img src="/images/{{ folder.path }}/{{ folder.images[folder.images.length // 40] }}" alt="Start">
+        <img src="{{ folder.cdnurl }}/{{ folder.images[folder.images.length // 40] }}" alt="Start">
         <p>Progress: 10%</p>
     </div>
     <div class="progress-image">
-        <img src="/images/{{ folder.path }}/{{ folder.images[folder.images.length // 10] }}" alt="Middle">
+        <img src="{{ folder.cdnurl }}/{{ folder.images[folder.images.length // 10] }}" alt="Middle">
         <p>Progress: 50%</p>
     </div>
     <div class="progress-image">
-        <img src="/images/{{ folder.path }}/{{ folder.images[folder.images.length - 1] }}" alt="Final">
+        <img src="{{ folder.cdnurl }}/{{ folder.images[folder.images.length - 1] }}" alt="Final">
         <p>Final image!</p>
     </div>
 </div>
