@@ -23,6 +23,9 @@ jobs:
         run: npm ci
 
       - name: Build du site Eleventy
+        env:
+          CDN_PATH: ${{ secrets.CDN_PATH }}
+          CDN_SHARE_ID: ${{ secrets.CDN_SHARE_ID }}
         run: npm run build
 
       - name: Déploiement sur la branche main
