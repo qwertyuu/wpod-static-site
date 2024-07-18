@@ -5,6 +5,11 @@ on:
     branches:
       - develop
 
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
